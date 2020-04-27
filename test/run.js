@@ -1,3 +1,3 @@
-const plug = require('./index')
+const plug = require('../plugin')
 plug.emojifyPath('./index.html')
 
