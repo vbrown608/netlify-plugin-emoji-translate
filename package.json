@@ -1,0 +1,24 @@
+{
+  "name": "netlify-plugin-emoji-translate",
+  "version": "1.0.0",
+  "description": "Translates a Netlify site to emoji using notwaldorg/emoji-translate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbrown608/netlify-plugin-emoji-translate.git"
+  },
+  "author": "Vivian Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbrown608/netlify-plugin-emoji-translate/issues"
+  },
+  "homepage": "https://github.com/vbrown608/netlify-plugin-emoji-translate#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "globby": "^11.0.0",
+    "moji-translate": "^1.0.8"
+  }
+}
