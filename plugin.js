@@ -10,7 +10,7 @@ module.exports = {
       readhandle = await fsPromises.open(file, 'r')
       const body = await readhandle.readFile()
       const $ = cheerio.load(body)
-      $(':not(:has(*))').map((i, el) => {
+      $('div *:not(:has(*))').map((i, el) => {
         $el = $(el)
         $el.text(moji.translate($el.text()))
       })

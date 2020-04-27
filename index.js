@@ -7,6 +7,12 @@ module.exports = {
   }) => {
     const htmlFiles = `${PUBLISH_DIR}/**/**.html`
     const paths = await globby(htmlFiles)
-    paths.map(plugin.emojifyPath)
+    for (const path of paths) {
+      try {
+        await plugin.emojifyPath(path)
+      } catch(e) {
+        console.error(e)
+      }
+    }
   },
 }
