@@ -6,7 +6,7 @@ module.exports = {
     constants: { PUBLISH_DIR },
   }) => {
     const htmlFiles = `${PUBLISH_DIR}/**/**.html`
-    const paths = await globby(lookup)
+    const paths = await globby(htmlFiles)
     paths.map(plugin.emojifyPath)
   },
 }
