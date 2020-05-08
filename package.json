@@ -1,7 +1,7 @@
 {
   "name": "netlify-plugin-emoji-translate",
   "version": "1.0.4",
-  "description": "Translates a Netlify site to emoji using notwaldorg/emoji-translate",
+  "description": "Translates a Netlify site to emoji using notwaldorf/emoji-translate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
