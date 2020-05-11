@@ -1,4 +1,4 @@
-const moji = require('moji-translate')
+const moji = require('./translator')
 const fsPromises = require('fs').promises
 const cheerio = require('cheerio')
 

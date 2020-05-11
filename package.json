@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-emoji-translate",
-  "version": "1.0.4",
+  "version": "1.1.5",
   "description": "Translates a Netlify site to emoji using notwaldorg/emoji-translate",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "cheerio": "^1.0.0-rc.3",
     "emojilib": "^2.4.0",
     "globby": "^11.0.0",
-    "moji-translate": "^1.0.8"
+    "moji-translate": "^1.0.8",
+    "pluralize": "^8.0.0"
   }
 }
