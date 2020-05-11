@@ -1,16 +1,23 @@
-const emojilib = require('emojilib').lib
+const emojilib = require('emojilib')
 const fsPromises = require('fs').promises
+
+const mods = emojilib.fitzpatrick_scale_modifiers
 
 invert = () => {
   let inverted = {}
-  for (let [name, props] of Object.entries(emojilib)) {
+  for (let [name, props] of Object.entries(emojilib).lib) {
     for (const keyword of props.keywords) {
+      let char = props.char
       if (props.category == "flags" && keyword.length === 2)
         continue
+      if (props.fitzpatrick_scale && Math.random() > 0.33) {
+        const modifier = mods[Math.floor(Math.random() * mods.length)]
+        char = char + modifier
+      }
       if (inverted[keyword]) {
-        inverted[keyword].push(props.char)
+        inverted[keyword].push(char)
       } else {
-        inverted[keyword] = [props.char]
+        inverted[keyword] = [char]
       }
     }
   }
